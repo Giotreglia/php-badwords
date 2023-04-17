@@ -1,7 +1,7 @@
 <?php
     $paragrafo = $_GET['paragraph'];
     $censura = $_GET['badword'];
-    $paragrafoCensurato = str_replace($censura, '*** ', $paragrafo); 
+    $paragrafoCensurato = str_ireplace($censura, '*** ', $paragrafo); 
 ?>
 
 <!DOCTYPE html>
